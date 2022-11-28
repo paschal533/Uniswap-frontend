@@ -30,7 +30,7 @@ export const getUniContract = () => new ethers.Contract(address1, ERC20ABI, web3
 
 export const getPrice = async (inputAmount, slippageAmount, deadline, walletAddress) => {
   try {
-    const percentSlippage = new Percent(slippageAmount, 100)
+  const percentSlippage = new Percent(slippageAmount, 100)
   const wei = ethers.utils.parseUnits(inputAmount.toString(), decimals0)
   const currencyAmount = CurrencyAmount.fromRawAmount(WETH, JSBI.BigInt(wei))
 
