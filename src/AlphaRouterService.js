@@ -32,7 +32,7 @@ export const getPrice = async (inputAmount, slippageAmount, deadline, walletAddr
   try {
     const percentSlippage = new Percent(slippageAmount, 100)
   const wei = ethers.utils.parseUnits(inputAmount.toString(), decimals0)
- // const currencyAmount = CurrencyAmount.fromRawAmount(WETH, JSBI.BigInt(wei))
+  const currencyAmount = CurrencyAmount.fromRawAmount(WETH, JSBI.BigInt(wei))
 
   const route = await router.route(
     currencyAmount,
