@@ -43,7 +43,7 @@ function changeValue(e){
 async function get1inchSwap(){
   const tx = await axios.get(`https://api.1inch.io/v5.0/1/swap?fromTokenAddress=${fromToken}&toTokenAddress=${toToken}&amount=${value}&fromAddress=${signerAddress}&slippage=5`);    
   console.log(tx.data)
-  setTo(tx.data.tx.to);
+  //setTo(tx.data.tx.to);
   setTxData(tx.data.tx.data);
   setValueExchangedDecimals(Number(`1E${tx.data.toToken.decimals}`));
   setValueExchanged(tx.data.toTokenAmount);
