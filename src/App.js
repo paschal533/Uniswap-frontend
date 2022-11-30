@@ -45,7 +45,7 @@ async function get1inchSwap(){
   console.log(tx.data)
   setTo(tx.data.tx.to);
   setTxData(tx.data.tx.data);
-  ///setValueExchangedDecimals(Number(`1E${tx.data.toToken.decimals}`));
+  setValueExchangedDecimals(Number(`1E${tx.data.toToken.decimals}`));
   setValueExchanged(tx.data.toTokenAmount);
   }
 
