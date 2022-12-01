@@ -16,7 +16,7 @@ function App() {
   ); //USDC ERC20 Contract
   const [value, setValue] = useState("10000000000000");
   const [valueExchanged, setValueExchanged] = useState("");
-  const [valueExchangedDecimals, setValueExchangedDecimals] = useState(1e18);
+  //const [valueExchangedDecimals, setValueExchangedDecimals] = useState(1e18);
   const [to, setTo] = useState("");
   const [txData, setTxData] = useState("");
 
