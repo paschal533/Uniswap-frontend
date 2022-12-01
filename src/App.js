@@ -18,7 +18,7 @@ function App() {
   const [valueExchanged, setValueExchanged] = useState("");
   const [valueExchangedDecimals, setValueExchangedDecimals] = useState(1e18);
   const [to, setTo] = useState("");
-  const [txData, setTxData] = useState("");
+  //const [txData, setTxData] = useState("");
 
   const { data, isLoading, isSuccess, sendTransaction } = useSendTransaction({
     request: {
